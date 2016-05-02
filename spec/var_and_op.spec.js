@@ -24,8 +24,8 @@ describe("Javascript Variables and Operateur Kata", function() {
 
 	});
 
-	it("should compute exponentiel", function() {
-		var result = tester.exponentiel(3, 2);
+	it("should compute exponentiation", function() {
+		var result = tester.exponentiel(2,3);
 		expect(result).toBe(8);
 	})
 
