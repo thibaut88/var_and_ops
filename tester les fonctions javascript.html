@@ -12,7 +12,7 @@
         
 <script>
 var isEquals = function(a, b) {
-    return a == b;
+    return a === b;
 };
 </script>
 <script>
@@ -35,21 +35,22 @@ var computeSum = function() {
 	for (i = 0; i < arguments.length; i++) {
 		result += parseInt(arguments[i]);
 	}
-	return result;
+	return result  ;
 
 }        
 </script>
 <script>
 var shouldComputeDouble = function(number){ /*number = 4 result = 8*/
-var a = 12;
+	var a = 12;
 
     var multiply = function(b){
     	var a = b*2;
     	return a;
     }
     
-    return a;
+    return multiply(number) ;
 }
+
         
 </script>
 <button onclick="alert(isEquals(13, '13'));">is equals !</button>
