@@ -1,0 +1,18 @@
+Qu’ est ce que la précédence des opérateurs? 
+
+1 - La précédence des opérateurs détermine l'ordre dans lequel les opératuers sont évalués.Les opérateurs à plus hautre précédence sont évalués en premier.
+
+Qu’ est ce que la déclaration d’ une variable, qu’ est ce que son initialisation? 
+
+2 - La déclaration de variable peut-etre globale ou locale et sert à mémoriser des valeurs en mémoire dans ce qui s'appel des variables.
+
+Qu’ est ce que la variable this? 
+
+3 - This fait réference à l'objet en cours d'utilisation.
+
+Qu’ est ce qu’ une variable locale, une variable globale? 
+4 - une variable globale peut etre utilisée n'importe ou dans le document, et une variable locale est localisée en fonction d'ou on la déclare.
+
+A quoi sert typeof? 
+
+5 - on l'utilise pour savoir de quel type est l'élement.

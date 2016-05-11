@@ -1,4 +1,4 @@
-/**...
+/**
  * Check the equality of two parameters
  * Two parameters are equals, only if they have
  * the same type, and same value.
