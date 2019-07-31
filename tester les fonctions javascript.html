@@ -2,63 +2,69 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>exercices mai javascript</title>
+    <title>Travis tests</title>
     <link href="index.css"type="text/css"rel="stylesheet">
-    <link href="javascript.css"type="text/javascript"rel="javascript">
+    <link href="javascript.css"type="text/javascript" rel="javascript">
 </head>
     <body>
-<center><h1 style="color:blue;border:3px solid grey;">tests</h1></center>
-        
-        
-<script>
-var isEquals = function(a, b) {
-    return a === b;
-};
-</script>
-<script>
-var add10AndMultiplyBy5 = function(a) { 
 
-	return (a + 10) * 5;
-}
-</script>
-<script>
-var computeExponention = function(a, b) {/*OK return Math.pow(2, 3);*/
+    <center><h1 style="
+    color:blue;border:3px solid grey;
+    box-shadow: 2px 2px 10px rgba(0,0,0,1);
+    ">Travis tests</h1></center>
+            
+            
+    <script>
+    var isEquals = function(a, b) {
+        return a === b;
+    };
+    </script>
+    <script>
+    var add10AndMultiplyBy5 = function(a) { 
 
-return Math.pow(a, b);
-
-}</script>
-<script>
-var computeSum = function() {
-
-	var result = 0;
-
-	for (i = 0; i < arguments.length; i++) {
-		result += parseInt(arguments[i]);
-	}
-	return result  ;
-
-}        
-</script>
-<script>
-var shouldComputeDouble = function(number){ /*number = 4 result = 8*/
-	var a = 12;
-
-    var multiply = function(b){
-    	var a = b*2;
-    	return a;
+    	return (a + 10) * 5;
     }
-    
-    return multiply(number) ;
-}
+    </script>
+    <script>
+    var computeExponention = function(a, b) {/*OK return Math.pow(2, 3);*/
 
+    return Math.pow(a, b);
+
+    }</script>
+    <script>
+    var computeSum = function() {
+
+    	var result = 0;
+
+    	for (i = 0; i < arguments.length; i++) {
+    		result += parseInt(arguments[i]);
+    	}
+    	return result  ;
+
+    }        
+    </script>
+    <script>
+    var shouldComputeDouble = function(number){ /*number = 4 result = 8*/
+    	var a = 12;
+
+        var multiply = function(b){
+        	var a = b*2;
+        	return a;
+        }
         
-</script>
-<button onclick="alert(isEquals(13, '13'));">is equals !</button>
-<button onclick="alert(add10AndMultiplyBy5(2));">add10AndMultiplyBy5 !</button>
-<button onclick="alert(computeExponention(2, 3));">computeExponention !</button>
-<button onclick="alert(computeSum(2, '5', 4));">computeSum !</button>
-<button onclick="alert(shouldComputeDouble(4));">shouldComputeDouble !</button>
-       
+        return multiply(number) ;
+    }
+
+            
+    </script>
+
+    <!-- Listeners for button events -->
+    <button onclick="alert(isEquals(13, '13'));">is equals !</button>
+    <button onclick="alert(add10AndMultiplyBy5(2));">add10AndMultiplyBy5 !</button>
+    <button onclick="alert(computeExponention(2, 3));">computeExponention !</button>
+    <button onclick="alert(computeSum(2, '5', 4));">computeSum !</button>
+    <button onclick="alert(shouldComputeDouble(4));">shouldComputeDouble !</button>
+           
 
 
 </body>

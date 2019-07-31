@@ -1,3 +1,11 @@
+/*
+* @Author MARCHAL Thibaut
+* @job 	  Developpeur indépendant
+
+* @Description : Ce fichier contient tous les tests !!
+*/
+
+// Inclure les fichiers des fonctions à tester
 var tester = require("../lib/var_and_op");
 
 
@@ -6,7 +14,6 @@ describe("Javascript Variables and Operateur Kata", function() {
 	it("should check variables equality", function() {
 
 		var result = tester.isEquals(13, "13");
-
 		expect(result).toBeFalsy();
 	});
 
