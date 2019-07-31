@@ -8,7 +8,7 @@ html, body, center, h1 {
 div *, h1, p {
 	font-family: Arial, "comic sans ms";
 }
-.rounded, button, *.test {
+.rounded, button, input, *.test {
 	border-radius: 12px;
 }
 h1 {
@@ -36,8 +36,11 @@ div#tests button{
 	min-width:max-content;
 }
 div#tests button:active,
-div#tests button:focus{
-	outline-style:none;
+div#tests button:focus,
+input:active,
+input:focus
+{
+	outline:0;
 }
 div#responses {
 	
@@ -65,4 +68,16 @@ div#responses *.test *.result *.valide{
 }
 div#responses *.test *.result *.novalide{ 
 	color:red;
+}
+
+label, input[name=path] {
+	font-family: Impact, Charcoal, sans-serif;
+ }
+input[name=path]{
+	margin:2em 0px;
+	min-width:300px;
+	min-height:40px;
+	line-height: 40px;
+	font-size: 1.2em;
+	padding-left:.5em;
 }

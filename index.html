@@ -3,11 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>Travis tests</title>
+    <meta name="Content-Type" content="text/html; charset='utf-8'">
     <link href="index.css"type="text/css"rel="stylesheet">
  </head>
     <body>
 
     <center><h1>Travis tests</h1></center>
+    <center>
+        <label for="path_to_project">Chemin d'un projet à tester : </label>
+        <input id="path_to_project" type="text" name="path"
+               placeholder="http://localhost/index.DEFAULT.php" 
+        >
+    </center>
     
     <div id="tests">
         <!-- Listeners for button events -->
@@ -85,6 +92,23 @@
     }
     var responses = document.getElementById('responses');
 
+    var searchInput = document.querySelector('input[name=path]');
+
+    searchInput.addEventListener('blur', function(){
+        var fileName = (this.value != '') ? this.value : this.placeholder;
+        var xhttp = new XMLHttpRequest()
+        if(!xhttp){
+            alert('xhttp ajax est non disponible')
+        }
+        xhttp.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+                responses.innerHTML += this.responseText
+            }
+        }
+        var async = true
+        xhttp.open("GET", fileName, async)
+        xhttp.send()
+      })
     </script>
 </body>
 </html>
